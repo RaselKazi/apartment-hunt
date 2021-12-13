@@ -1,0 +1,18 @@
+.sidebar {
+  background-color: #fff;
+  li {
+    margin-bottom: 2em;
+    &:hover {
+      span {
+        display: inline-block;
+        transform: translate(5px);
+      }
+    }
+  }
+  svg {
+    margin-right: 5px;
+  }
+}
+.sidebar-pages {
+  height: 100vh;
+}
