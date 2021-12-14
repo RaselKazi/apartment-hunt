@@ -154,6 +154,12 @@ client.connect((err) => {
   });
 });
 
+// Root:
+
+app.get("/", (req, res) => {
+  res.send(`Server is working on http://localhost:${process.env.PORT}`);
+});
+
 // Listener port
 app.listen(process.env.PORT, () => {
   console.log(`Server is working on http://localhost:${process.env.PORT}`);
